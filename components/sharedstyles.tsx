@@ -10,12 +10,16 @@ const Container = styled.div`
   min-height: 100vh;
 `
 const Main = styled.main`
-  padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  background-image: url('/images/bg_home.jpg');
+  background-color: rgba(104, 120, 214, 1);
+  background-blend-mode: multiply !important;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;  
 `
 
 const Title = styled.h1`
