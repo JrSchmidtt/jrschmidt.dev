@@ -62,6 +62,7 @@ const NavbarLogo = styled.div`
   font-weight: 800;
   line-height: 1.15;
   color: ${({ theme }) => theme.colors.text};
+  cursor: pointer;
   @media (max-width: 768px) {
     font-size: 1.2rem;
   }
