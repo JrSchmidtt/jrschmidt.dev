@@ -71,11 +71,12 @@ const NavbarLogo = styled.div`
 const NavbarLinks = styled.div`
   width: 30%;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   a:last-child {
     color: ${({ theme }) => theme.colors.text};;
   }
+  font-size: 1.5rem;
+  font-weight: 500;
   @media (max-width: 768px) {
     width: 100%;
     display: flex;
