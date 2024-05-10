@@ -8,18 +8,20 @@ const Container = styled.div`
   align-items: center;
   height: 100vh;
   min-height: 100vh;
+  background-image: url('/images/bg_home.jpg');
+  background-color: rgba(104, 120, 214, 1);
+  background-blend-mode: multiply !important;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
 `
 const Main = styled.main`
   flex: 1;
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-image: url('/images/bg_home.jpg');
-  background-color: rgba(104, 120, 214, 1);
-  background-blend-mode: multiply !important;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  background-size: cover;  
+  max-width: 1600px;
+  max-height: 100vh;
 `
 
 const Title = styled.h1`
