@@ -6,11 +6,11 @@ const Banner = () => {
             <CallToAction>
                 <h3>HELLO</h3>
                 <h1>I AM JUNIOR SCHMIDT</h1>
-                <p>Explorando novas tecnologias e desenvolvendo perspicácia em programação.</p>
+                <p>🤔 Exploring new technologies and developing programming insights.</p>
                 <Button>VER PROJETOS</Button>
             </CallToAction>
             <Profile>
-                <img src='/images/junior-schmidt.png' alt="Junior Schmidt Profile" />
+                <img src='https://avatars.githubusercontent.com/u/28675529' alt="Junior Schmidt Profile" />
                 <div>
                     <p>Desenvolvedor Full-Stack</p>
                 </div>
