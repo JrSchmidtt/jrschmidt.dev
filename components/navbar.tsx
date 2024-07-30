@@ -10,6 +10,7 @@ interface NavbarProps {
 export type INavBarLinks = {
   Name: string;
   url: string;
+  target?: string,
 }
 
 export function Navbar({ NavBarLinks }: NavbarProps) {
@@ -30,7 +31,7 @@ export function Navbar({ NavBarLinks }: NavbarProps) {
         ) : (
           <NavbarLinks>
             {NavBarLinks.map((link, index) => (
-              <a key={index} href={link.url}>{link.Name}</a>
+              <a key={index} href={link.url} target={link?.target ?? ""}>{link.Name}</a>
             ))}
           </NavbarLinks>
         )}
