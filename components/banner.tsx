@@ -6,13 +6,13 @@ const Banner = () => {
             <CallToAction>
                 <h3>HELLO</h3>
                 <h1>I AM JUNIOR SCHMIDT</h1>
-                <p>🤔 Exploring new technologies and developing programming insights.</p>
+                <h4>🤔 Exploring new technologies and developing programming insights.</h4>
                 <Button>VER PROJETOS</Button>
             </CallToAction>
             <Profile>
                 <img src='https://avatars.githubusercontent.com/u/28675529' alt="Junior Schmidt Profile" />
                 <div>
-                    <p>Desenvolvedor Full-Stack</p>
+                    <p>Web Developer - Full Stack</p>
                 </div>
             </Profile>
         </Container>
@@ -21,28 +21,36 @@ const Banner = () => {
 
 const Profile = styled.div`
     width: 30%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 1rem;
     img {
         width: 400px;
         object-fit: cover;
         border-radius: 50%;
     }
+    backdrop-filter: blur(7px) saturate(180%);
+    -webkit-backdrop-filter: blur(7px) saturate(180%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 `;
 
 const Button = styled.button`
-    background-color: ${({ theme }) => theme.colors.primary};
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
     &:hover {
-        background-color: ${({ theme }) => theme.colors.secondary};
         color: #fff;
         transform: scale(1.1);
     }
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255,255,255,0.8);
 `;
 
 const Container = styled.div`
@@ -55,6 +63,7 @@ height: 100vh;
 `
 
 const CallToAction = styled.div`
+    gap: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
