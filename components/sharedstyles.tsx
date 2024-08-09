@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 
-const Container = styled.div`
+interface ContainerProps {
+  backgroundType?: 'image' | 'none'
+  backgroundColour?: 'primary' | 'secondary' | 'background'
+}
+
+const Container = styled.div<ContainerProps>`
   padding: 0 0.5rem;
   display: flex;
   flex-flow: column nowrap;
@@ -8,20 +13,31 @@ const Container = styled.div`
   align-items: center;
   height: 100vh;
   min-height: 100vh;
-  background-image: url('/images/bg_home.jpg');
-  background-color: rgba(104, 120, 214, 1);
+  color: ${({ theme }) => theme.colors.text};
+  background-color: ${({ theme, backgroundColour }) => 
+    backgroundColour ? theme.colors[backgroundColour] : theme.colors.background
+  };
   background-blend-mode: multiply !important;
   background-repeat: no-repeat;
-  overflow: hidden;
   background-size: cover;
-`
-const Main = styled.main`
+    ${({ backgroundType }) => 
+    backgroundType === 'image' ? `
+      background-image: url('/images/bg_home.webp');
+    ` : `
+      background-image: none;
+    `
+  }
+`;
+
+const Section = styled.main`
   flex: 1;
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 1600px;
   max-height: 100vh;
+  gap: 1rem;
+  padding: 1rem;
 `
 
 const Title = styled.h1`
@@ -57,4 +73,4 @@ const CodeTag = styled.code`
     Bitstream Vera Sans Mono, Courier New, monospace;
 `
 
-export { Container, Main, Title, Description, CodeTag }
+export { Container, Section, Title, Description, CodeTag }
