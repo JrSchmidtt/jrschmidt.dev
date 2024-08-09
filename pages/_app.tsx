@@ -6,8 +6,13 @@ const theme: DefaultTheme = {
   colors: {
     background: '#181A1B',
     primary: '#6878d6',
-    secondary: '#3EBAFF',
+    secondary: '#fff',
     text: '#fff',
+    highlight: '#fff',
+    highlightBackground: '#6878d6',
+    link: '#6878d6',
+    textSecondary: '#ccc',
+    cardBackground: '#2B2E34',
   },
 }
 
