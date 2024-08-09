@@ -3,9 +3,9 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
   html,
   // debug css
-  * {
+  /* * {
     border: 1px dashed red;
-  }
+  } */
   body {
     background-color: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.primary};
