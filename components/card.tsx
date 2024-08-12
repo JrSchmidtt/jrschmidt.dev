@@ -16,6 +16,7 @@ export const Card = styled.div`
     margin: 0;
     font-size: 1.5rem;
     color: ${({ theme }) => theme.colors.primary};
+    white-space: nowrap;
   }
   
   p {
