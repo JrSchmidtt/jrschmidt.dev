@@ -17,7 +17,7 @@ export const Card = styled.div`
   h4 {
     margin: 0;
     font-size: 1.2rem;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.text};
   }
   
   p {
