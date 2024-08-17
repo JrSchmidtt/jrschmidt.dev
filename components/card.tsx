@@ -16,7 +16,7 @@ export const Card = styled.div`
   
   h4 {
     margin: 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: ${({ theme }) => theme.colors.primary};
   }
   
