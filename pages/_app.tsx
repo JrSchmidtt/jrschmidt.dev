@@ -4,7 +4,7 @@ import GlobalStyle from '@/components/globalstyles'
 
 const theme: DefaultTheme = {
   colors: {
-    background: '#181A1B',
+    background: '#000000',
     primary: '#6878d6',
     secondary: '#fff',
     text: '#fff',
@@ -12,7 +12,7 @@ const theme: DefaultTheme = {
     highlightBackground: '#6878d6',
     link: '#6878d6',
     textSecondary: '#ccc',
-    cardBackground: '#2B2E34',
+    cardBackground: '#171717',
   },
 }
 
