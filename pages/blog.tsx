@@ -23,7 +23,6 @@ export default function Home() {
                   <img src={article.cover_image} alt={article.title} />
                   <h4>{article.title}</h4>
                 </a>
-                <p>{article.description}</p>
                 <ul>
                   <li>
                     Published: {FormatDate(article.published_at, "pt-br")}
