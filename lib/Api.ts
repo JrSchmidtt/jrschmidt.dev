@@ -19,3 +19,19 @@ export const getFromGithub = async (url: string, page: number, limit: number) =>
         console.log(error)
     }
 }
+
+const devToApiUrl = 'https://dev.to/api'
+
+export const getArticles = async (username: string) => {
+    try {
+        const response = await axios.get(`${devToApiUrl}/articles`,{
+            params: {
+                username
+            }
+        })
+        return response.data
+    }
+    catch (error) {
+        console.log(error)
+    }
+}
