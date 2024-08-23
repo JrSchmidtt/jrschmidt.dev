@@ -1,4 +1,3 @@
-// Card.tsx
 import styled from 'styled-components';
 
 export const Card = styled.div`
@@ -11,12 +10,14 @@ export const Card = styled.div`
   &:hover {
     transform: translateY(-5px);
   }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   
   h4 {
     margin: 0;
-    font-size: 1.5rem;
-    color: ${({ theme }) => theme.colors.primary};
-    white-space: nowrap;
+    font-size: 1.2rem;
+    color: ${({ theme }) => theme.colors.text};
   }
   
   p {
@@ -40,6 +41,11 @@ export const Card = styled.div`
       font-size: 0.9rem;
       color: ${({ theme }) => theme.colors.textSecondary};
     }
+  }
+
+  img {
+    width: 100%;
+    border-radius: 8px;
   }
 `;
 
